@@ -1,0 +1,10 @@
+# Static site: a single self-contained HTML file with no build step.
+[build]
+  publish = "."
+  command = ""
+
+# There is no index.html, so serve safuu.html at the site root.
+[[redirects]]
+  from = "/"
+  to = "/safuu.html"
+  status = 200
